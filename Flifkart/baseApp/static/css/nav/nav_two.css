@@ -1,0 +1,48 @@
+/*  Start Nav Two  */
+.nav-two {
+    background-color: #E9E9E9;
+    margin: 10px;
+}
+
+.nav-two-whole {
+    width: 95vw;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+}
+
+.nav-two-single-item {
+    width: 100px;
+    text-align: center;
+}
+
+.nav-two-single-item .nav-two-single-item-image- img {
+    width: 70px;
+}
+
+.div-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.div-space-between img {
+    width: 15px;
+}
+
+.nav-two-hover-hide {
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    display: none;
+}
+.nav-two-hover-hide div {
+    width: 200px;
+
+}
+
+.nav-two-show-div:hover .nav-two-hover-hide {
+    display: flex;
+}

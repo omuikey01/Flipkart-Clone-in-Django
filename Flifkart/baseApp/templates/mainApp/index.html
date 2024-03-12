@@ -1,0 +1,222 @@
+<!-- For Access files that is .css, .js, .png, .svg from static folder -->
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links for Attack Css Files -->
+    <link rel="stylesheet" href="{% static '/css/Main_Css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Main_Css/single.css' %}">
+    <link rel="stylesheet" href="{% static '/css/nav/nav.css' %}">
+    <link rel="stylesheet" href="{% static '/css/nav/nav_two.css' %}">
+
+    <!-- Jquery Main Link/Code -->
+    <script src="{% static '/jquery/main.js' %}"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- First Nav  -->
+    <nav class="nav-component ">
+        <div class="My_flex nav-bar-content cursor bg-trans padding-10 ">
+
+            <div>
+                <img src="{% static '/images/logo/logo.svg' %}" alt="Logo" width="100px">
+            </div>
+
+            <div class="nav-search My_flex nav-login-card ali-cen-jus-bet ">
+                <img class="nav-img-w-30px" src="{% static '/images/logo/search.svg' %}" alt="Logo">
+                <input class="padding-10" type="search" placeholder="Search for Product, Brand or More">
+            </div>
+
+            <div class="My_flex nav-login-card nav-login ">
+
+                <div class=" My_flex nav-login-down-arrow">
+                    <img class="nav-img-w-30px" src="{% static '/images/logo/login.svg' %}" alt="Logo">
+                    <span> Login </span>
+
+                    <img style="width: 15px;" class="bg-trans" id="nav-down-hover"
+                        src="{% static '/images/logo/loginarrow.svg' %}" alt="Logo">
+
+                    <img style="width: 12px;" class="nav-img-w-30px" id="nav-up-hover"
+                        src="{% static '/images/logo/up-arrow.svg' %}" alt="Logo">
+
+                </div>
+
+                <!--  Hide Data  -->
+                <div class="nav-hover-show-login border-radius-10px ">
+                    <div class=" My_flex nav-login-hide-show-auth">
+                        <span> New Customer ? </span>
+
+                        <span> <a href="{% url 'singup' %}">Sign Up</a> </span>
+
+                    </div>
+                    <div>
+                        <div class=" My_flex nav-hide-show-div">
+                            <img class="hover-pip-up-w-20" src="{% static '/images/logo/login.svg' %}" alt="Logo"
+                                width="20px">
+                            <span> Login </span>
+                        </div>
+                        <div class=" My_flex nav-hide-show-div">
+                            <img src="{% static '/images/logo/hidemenu/pluszone.svg' %}" alt="Logo" width="20px">
+                            <span> Flifkar Plus Zone </span>
+                        </div>
+
+                        <div class=" My_flex nav-hide-show-div">
+                            <img src="{% static '/images/logo/hidemenu/order.svg' %}" alt="Logo" width="20px">
+                            <span> Oders </span>
+                        </div>
+
+                        <div class=" My_flex nav-hide-show-div">
+                            <img src="{% static '/images/logo/hidemenu/reward.svg' %}" alt="Logo" width="20px">
+                            <span> Rewards </span>
+                        </div>
+
+                        <div class=" My_flex nav-hide-show-div">
+                            <img src="{% static '/images/logo/hidemenu/wishlist.svg' %}" alt="Logo" width="20px">
+                            <span> Whishlist </span>
+                        </div>
+
+                        <div class=" My_flex nav-hide-show-div">
+                            <img src="{% static '/images/logo/hidemenu/giftcard.svg' %}" alt="Logo" width="20px">
+                            <span> Gift Cards </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="My_flex nav-login-card nav-card ">
+                <img class="nav-img-w-30px" src="{% static '/images/logo/cart.svg' %}" alt="Logo">
+                <span> Card </span>
+            </div>
+
+            <div class="My_flex nav-login-card nav-card ">
+                <img class="nav-img-w-30px" src="{% static '/images/logo/sellerimg.svg' %}" alt="Logo">
+                <span> Become a Seller </span>
+            </div>
+
+            <div class="nav-dot">
+                <img class="padding-10" src="{% static '/images/logo/dots.svg' %}" alt="Dot">
+
+                <div class="nav-dot-hover-show border-radius-10px ">
+                    <div class=" flex nav-hide-show-div">
+                        <img src="{% static '/images/logo/dotmenu/notify.svg' %}" alt="Logo" width="20px">
+                        <span> Notifications and Preference </span>
+                    </div>
+                    <div class=" flex nav-hide-show-div">
+                        <img src="{% static '/images/logo/dotmenu/care.svg' %}" alt="Logo" width="20px">
+                        <span> 24*7 Customer Care </span>
+                    </div>
+
+                    <div class=" flex nav-hide-show-div">
+                        <img src="{% static '/images/logo/dotmenu/advertise.svg' %}" alt="Logo" width="20px">
+                        <span> Advertise </span>
+                    </div>
+
+                    <div class=" flex nav-hide-show-div">
+                        <img src="{% static '/images/logo/dotmenu/download.svg' %}" alt="Logo" width="20px">
+                        <span> Download App </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Second Navbar  -->
+    <div class=" nav-two">
+        <div class=" My_flex nav-two-whole">
+
+            <div class="nav-two-single-item cursor ">
+
+
+                <div class="nav-two-show-div"> <!-- This Div is visible of user  -->
+                    <div class="nav-two-single-item-image-">
+                        <img src="{% static 'images/nav-images/nav2-1.webp' %}" alt="">
+                    </div>
+
+                    <div class="div-space-between">
+                        <span> Grocery </span>
+                        <img src="{% static '/images/logo/up-arrow.svg' %}" alt="Logo">
+                    </div>
+
+
+                    <div class="nav-two-hover-hide My_flex padding-10 border-radius-10 ">
+                        <!-- This Div is invisible of user. When the user will hover on it then it will visible  -->
+                        <div>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium et minus soluta
+                            dolorem ad
+                            incidunt, necessitatibus autem consectetur animi corrupti.
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ipsum voluptate nulla
+                            magnam tempore et excepturi distinctio ad totam reprehenderit.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--
+            <div>
+                <img src="{% static 'images/nav-images/nav2-2.webp' %}" alt="">
+                <span> Mobiles </span>
+            </div>
+
+            <div>
+                <img src="{% static 'images/nav-images/nav2-3.webp' %}" alt="">
+                <span> Fashion </span>
+            </div>
+
+            <div>
+                <img src="{% static 'images/nav-images/nav2-4.webp' %}" alt="">
+                <span> Electronics </span>
+            </div>
+
+            <div>
+                <img src="{% static 'images/nav-images/nav2-5.webp' %}" alt="">
+                <span> Home & Furniture </span>
+            </div>
+
+            <div>
+                <img src="{% static 'images/nav-images/nav2-6.webp' %}" alt="">
+                <span> Appliances </span>
+            </div>
+
+            <div>
+                <img src="{% static 'images/nav-images/nav2-7.webp' %}" alt="">
+                <span> Traval </span>
+            </div>
+
+            <div>
+                <img src="{% static 'images/nav-images/nav2-8.webp' %}" alt="">
+                <span> Beauty, Toys & More </span>
+            </div>
+
+            <div>
+                <img src="{% static 'images/nav-images/nav2-9.webp' %}" alt="">
+                <span> Two Whelers </span>
+            </div>
+
+ -->
+        </div>
+
+    </div>
+
+
+
+<a href="{% url 'newregister' %}"> Registration </a>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,107 @@
+.nav-component {
+    background-color: #FFFFFF;
+}
+
+.nav-bar-content {
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.nav-login-card {
+    gap: 10px;
+}
+
+.nav-search {
+    background-color: rgb(240, 246, 244);
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.nav-search input {
+    width: 400px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-login {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.nav-hover-show-login {
+    display: none;
+    width: 300px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-hover-show-login div {
+    margin: 5px;
+}
+
+.nav-login-down-arrow {
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+}
+
+
+.nav-login span {
+    background-color: transparent;
+}
+
+
+.nav-img-w-30px {
+    width: 25px;
+    background-color: transparent;
+}
+
+.nav-dot-hover-show {
+    display: none;
+    width: 300px;
+    padding: 0 10px;
+}
+
+
+/*  For Hide and Show Data  */
+.nav-hide-show-div {
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.nav-login-hide-show-auth {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+/* Hover Start of First Nav */
+.nav-login:hover {
+    background-color: blue;
+}
+
+.nav-login:hover .nav-hover-show-login {
+    display: block;
+    position: absolute;
+    top: 55px;
+    box-shadow: 0 0 10px rgb(121, 25, 55);
+}
+
+.nav-dot:hover .nav-dot-hover-show {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    box-shadow: 0 0 10px rgb(121, 25, 55);
+}
