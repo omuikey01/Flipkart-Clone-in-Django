@@ -55,14 +55,19 @@
                     <div class=" My_flex nav-login-hide-show-auth">
                         <span> New Customer ? </span>
 
-                        <span> <a href="{% url 'singup' %}">Sign Up</a> </span>
+                        <span> <a href="#">Sign Up</a> </span>
 
                     </div>
                     <div>
                         <div class=" My_flex nav-hide-show-div">
                             <img class="hover-pip-up-w-20" src="{% static '/images/logo/login.svg' %}" alt="Logo"
                                 width="20px">
-                            <span> Login </span>
+                            <span>
+                                
+                                <a href="{% url 'login' %}">Login</a> 
+                                
+
+                            </span>
                         </div>
                         <div class=" My_flex nav-hide-show-div">
                             <img src="{% static '/images/logo/hidemenu/pluszone.svg' %}" alt="Logo" width="20px">
@@ -214,7 +219,7 @@
 
 
 
-<a href="{% url 'newregister' %}"> Registration </a>
+{% comment %} <a href="{% url 'newregister' %}"> Registration </a> {% endcomment %}
 
 
 
